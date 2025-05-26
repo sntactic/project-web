@@ -1,0 +1,50 @@
+.side-bar{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(153, 209, 11);
+    width: 250px;
+    z-index: 1;
+    position: fixed;
+    margin-top: -9px;
+    transform: translateX(-105%);
+    transition: transform 1s ease;
+    gap: 10%;
+}
+
+.translate{
+    transform: translateX(-10px);
+    transition: transform 1s ease;
+}
+
+button{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.text{
+    margin-left: -40px;
+    float: left;
+    padding-left: 70px;
+}
+
+select{
+    width: 80%;
+    height: 25px;
+    font-size: 18px;
+    border-radius: 10px;;
+}
+
+@media screen and (min-width:850px) {
+    button{
+        display: none;
+    }
+
+    .side-bar{
+        display: none;
+    }
+}

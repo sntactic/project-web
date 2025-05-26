@@ -1,0 +1,75 @@
+img{
+    height: 30vh;
+    width: 99.5%;
+    border-radius: 4px;
+}
+
+.theme{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+button{
+    font-size: 18px;
+    background-color: rgb(238, 236, 236);
+    border-radius : 10px;
+    margin-left: 15%; margin-right: 15%;
+    border: 1px solid black;
+}
+
+.categ{
+    font-size: 20px;
+}
+
+
+.question{
+    font-size: 20px;
+}
+
+.reponse{
+    color: green;
+    font-size: 20px;
+}
+
+.quizz-card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30vw;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px black;
+    position: relative;
+}
+
+@media screen and (max-width: 650px) {
+    .quizz-card{
+        text-align: center;
+        width: 90vw;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px black;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width: 800px) {
+    .quizz-card{
+        text-align: center;
+        width: 80vw;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px black;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 940px) {
+    .quizz-card{
+        text-align: center;
+        width: 45vw;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 15px black;
+        border-radius: 8px;
+    }
+}

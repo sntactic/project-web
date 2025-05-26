@@ -1,0 +1,35 @@
+.cards{
+    padding-top: 45px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    gap: 50px;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+@media screen and (max-width: 650px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns:1fr ;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width:651px) and (max-width: 800px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns:1fr;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 940px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns:1fr 1fr;
+        justify-content: space-around;
+    }
+}

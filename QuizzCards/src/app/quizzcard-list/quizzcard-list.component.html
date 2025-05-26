@@ -1,0 +1,6 @@
+<div class="cards">
+    @for (quizzCard of quizzCards; track $index) {
+      <app-quizz-card [quizzCard]="quizzCard" *ngIf="(quizzCard.categorie===difficulte || difficulte==='aléatoire') && (quizzCard.domaine===domaine || domaine==='aléatoire')"/>
+    }
+</div>
+
