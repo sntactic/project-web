@@ -1,0 +1,27 @@
+.joueur{
+    height: 400px; 
+    background:linear-gradient(blue , rgb(14, 4, 56)); 
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 6px 6px 15px grey;
+}
+
+.joueur.hover{
+    height: 300px; 
+    box-shadow: 6px 6px 15px black;
+    background:linear-gradient(rgb(14, 4, 56),blue); 
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.score{
+    margin-top: 100px;
+    font-size: 50px;
+    color: green;
+}
+
+.nom_joueur{
+    font-size: 25px;
+    color: white;
+}

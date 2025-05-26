@@ -1,0 +1,31 @@
+.joueur{
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px; 
+    font-size: 20px;
+}
+
+.bouton_commencer{
+    color: white; 
+    background-color: blue; 
+    height: 35px; 
+    border-radius: 10px; 
+    font-size: 20px;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.ajouter_joueur{
+    color: white; 
+    background-color: green; 
+    border-radius: 6px;
+    width: 200px;
+}
+
+.supprimer_joueur{
+    color: white; 
+    background-color: red; 
+    border-radius: 6px;
+    width: 200px;
+}

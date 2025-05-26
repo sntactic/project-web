@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/accueil.css">
+
+        <script src="../js/accueil.js" defer></script>
+    </head>
+
+    <body>
+
+        <div style="display: flex; flex-direction: column; gap: 50px;margin-top: 100px;margin-left: 10px; margin-right: 10px;">
+            <div style="display: flex; flex-direction: row; gap: 50px ;">
+                <button id="ajout" class="ajouter_joueur" onclick="ajouter_joueur()"> ajouter un joueur </button>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 50px" id="champs_nom_joueur">
+                <!-- joueurs á ajouter -->
+            </div>
+            <a id="jouer" style="visibility: hidden;"><button class="bouton_commencer" onclick="commencer_quizz()"> commencer le Quizz </button></a>
+        </div>
+        
+    </body>
+
+
+</html>
