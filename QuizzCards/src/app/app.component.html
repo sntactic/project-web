@@ -1,5 +1,5 @@
-<app-header/>
-<app-side-bar/>
-<app-top-bar/>
+<app-header *ngIf="currentRoute !=='/'"/>
+<app-side-bar *ngIf="currentRoute !=='/'"/>
+<app-top-bar *ngIf="currentRoute !=='/'"/>
 <p class="space-screen"></p>
 <router-outlet/>
