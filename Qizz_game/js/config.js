@@ -27,7 +27,6 @@ let parent = document.getElementById("players")
 
 const joueurs = localStorage.getItem("liste_joueurs").split(",")
 console.log(joueurs)
-localStorage.clear()
 
 for (let i = 1 ; i <= 4 ; i++){
     let player = new Joueur(joueurs[i*1-1] , i)
