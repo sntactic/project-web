@@ -4,12 +4,15 @@ export class QuizzCard{
     couleur!:string;
     id !: number;
     public static numcard = 0;
+
     constructor(public domaine:string,
                 public categorie:string,
                 public imageUrl:string,
                 public question:string, 
-                public reponse:string, 
-                public date:Date ){
+                public reponse:string,
+                public date:Date = new Date,
+                public explication:string = "aucune explication",
+                public user:string = "none" ){
 
         this.setCouleur(categorie)
         this.id=QuizzCard.numcard++

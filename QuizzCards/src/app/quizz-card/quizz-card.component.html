@@ -1,11 +1,16 @@
-<div [ngStyle]="{'border':'3px solid '+quizzCard.couleur}" class="quizz-card">
+<div [ngStyle]="{'border':'3px solid '+quizzCard.couleur}" class="quizz-card-front" *ngIf="fliped===false">
     <div class="theme">{{quizzCard.domaine}}</div>
     <button (click)="quizzCard.onVoirReponse()">{{quizzCard.etat_repone}}</button>
     <p [ngStyle]="{background:quizzCard.couleur}" class="categ">{{quizzCard.categorie}}</p>
-    <img [src]="quizzCard.imageUrl" [alt]="quizzCard.domaine">
+    <img [src]="quizzCard.imageUrl" [alt]="quizzCard.domaine" (click)="onfliped()">
     <div class="question"><strong>{{quizzCard.question}}</strong></div>
     @if (quizzCard.reponse_vue === true) {
         <p class="reponse">{{quizzCard.reponse}}</p>
     }@else {<p class="reponse" style="color: black;">???</p>}
     <div style="position: absolute; bottom: 2px; left: 10px;">{{quizzCard.date | date:'d MMMM YYYY à HH:mm'}}</div>
 </div>
+
+<div [ngStyle]="{'border':'3px solid '+quizzCard.couleur}" class="quizz-card-front" (click)="onfliped()" *ngIf="fliped===true">
+    <h1>description</h1>
+    <p class="desc">{{quizzCard.explication}}</p>
+</div> 

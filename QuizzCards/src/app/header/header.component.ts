@@ -1,10 +1,13 @@
 import { NgClass } from '@angular/common';
 import { Component, OnInit} from '@angular/core';
 import { HeaderService } from '../services/header-cevice';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [
+    RouterLink
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

@@ -1,7 +1,7 @@
 <div class="white-bar">
     <div class="top-bar">
-      <div>
-          <div>filtrer par theme</div>
+      <div *ngIf="currentRoute ==='/quizzcards'">
+          <div style="color: white;">filtrer par theme</div>
           <select (change)="setDomaine($any($event.target).value)">
             <option value="aléatoire">aléatoire</option>
             <option value="science et technologie">science et technologie</option>
@@ -9,12 +9,12 @@
             <option value="médecine">medecine</option>
             <option value="botanique">botanique</option>
             <option value="histoire">histoire</option>
-            <option value="animale">animale</option>
+            <option value="zoo">animale</option>
         </select>
       </div>
     
-      <div>
-          <div>filtrer par difficulté</div>
+      <div *ngIf="currentRoute ==='/quizzcards'">
+          <div style="color: white;">filtrer par difficulté</div>
           <select (change)="setDifficulte($any($event.target).value)">
             <option value="aléatoire">aléatoire</option>
             <option value="facile">facile</option>
@@ -24,8 +24,10 @@
             <option value="génie">genie</option>
         </select>
       </div>
-    
-      <button style="background-color: blue; color: white;">créer une QuizzCard</button>
+      
+      <a routerLink="createcard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <button style="background-color: blue; color: white;">créer une QuizzCard</button>
+      </a>
       <!-- <button style="background-color: red; color: white;">se deconnecter</button> -->
       <!-- <button style="background-color: white; color:black;"><a style="color:black;" routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">accueil</a></button> -->
       <a routerLink="quizzcards" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">

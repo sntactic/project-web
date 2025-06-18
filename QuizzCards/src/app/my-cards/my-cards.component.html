@@ -1,1 +1,5 @@
-<p>vous n'avez aucune carte !</p>
+<h2>vous n'avez aucune carte !</h2>
+
+@for (quizzCard of quizzCards; track $index) {
+    <app-quizz-card [quizzCard]="quizzCard" *ngIf="(quizzCard.user === 'khadim')"/>
+}

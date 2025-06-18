@@ -1,6 +1,18 @@
 <div class="side-bar" [ngClass]="{'translate' : side_bar}">
-    <div>
-        <div class="text" style="margin-top: 80px;">filtrer par theme  </div>
+
+    <a routerLink="createcard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <button style="background-color: blue; color: white;">créer une QuizzCard</button>
+    </a>
+    <!-- <button style="background-color: red; color: white;">se deconnecter</button> -->
+    <a routerLink="quizzcards" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <button style="background-color:green; color:white;">quizzcards</button>
+    </a>
+    <a routerLink="mycards" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <button style="background-color: red; color:white;">voir mes cartes</button>
+    </a>
+
+    <div *ngIf="currentRoute ==='/quizzcards'">
+        <div class="text">filtrer par theme  </div>
         <select (change)="setDomaine($any($event.target).value)">
             <option value="aléatoire">aléatoire</option>
             <option value="science et technologie">science et technologie</option>
@@ -8,11 +20,11 @@
             <option value="médecine">medecine</option>
             <option value="botanique">botanique</option>
             <option value="histoire">histoire</option>
-            <option value="animale">animale</option>
+            <option value="zoo">animale</option>
         </select>
     </div>
 
-    <div>
+    <div *ngIf="currentRoute ==='/quizzcards'">
         <div class="text">filtrer par difficulté</div>
         <select (change)="setDifficulte($any($event.target).value)">
             <option value="aléatoire">aléatoire</option>
@@ -23,8 +35,5 @@
             <option value="génie">genie</option>
         </select>
     </div>
-
-    <button style="background-color: blue; color: white;">créer une QuizzCard</button>
-    <button style="background-color: red; color: white;">se deconnecter</button>
 
 </div>

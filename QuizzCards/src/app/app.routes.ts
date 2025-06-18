@@ -3,11 +3,13 @@ import { QuizzcardListComponent } from './quizzcard-list/quizzcard-list.componen
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SigleQuizzCardComponent } from './sigle-quizz-card /sigle-quizz-card.component';
 import { MyCardsComponent } from './my-cards/my-cards.component';
+import { CreateCardComponent } from './create-card/create-card.component';
 
 export const routes: Routes = [
     {path:'quizzcards/:id', component:SigleQuizzCardComponent},
     {path:'quizzcards', component:QuizzcardListComponent},
     {path:'', component:LandingPageComponent},
-    {path:'mycards', component:MyCardsComponent}
+    {path:'mycards', component:MyCardsComponent},
+    {path:'createcard', component:CreateCardComponent}
 
 ];
